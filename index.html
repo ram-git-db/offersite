@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Product Offers</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f5f6f8;
+    padding: 40px 20px;
+  }
+
+  h1 {
+    text-align: center;
+    color: #1a1a2e;
+    margin-bottom: 8px;
+    font-size: 28px;
+  }
+
+  p.subtitle {
+    text-align: center;
+    color: #666;
+    margin-bottom: 32px;
+    font-size: 15px;
+  }
+
+  .product-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1300px;
+    margin: 0 auto;
+  }
+
+  .product-box {
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    width: 200px;
+    padding: 16px;
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .product-box:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+  }
+
+  .product-box img {
+    width: 100%;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 12px;
+    background: #eee;
+  }
+
+  .product-box h3 {
+    font-size: 15px;
+    color: #1a1a2e;
+    margin-bottom: 6px;
+    min-height: 38px;
+  }
+
+  .product-box .price {
+    font-size: 15px;
+    font-weight: bold;
+    color: #2e7d32;
+    margin-bottom: 4px;
+  }
+
+  .product-box .old-price {
+    font-size: 13px;
+    color: #999;
+    text-decoration: line-through;
+    margin-bottom: 12px;
+  }
+
+  .product-box a.btn {
+    display: inline-block;
+    width: 100%;
+    padding: 10px 0;
+    background: #1a1a2e;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background 0.2s ease;
+  }
+
+  .product-box a.btn:hover {
+    background: #d97757;
+  }
+
+  @media (max-width: 900px) {
+    .product-row { gap: 16px; }
+    .product-box { width: 45%; }
+  }
+
+  @media (max-width: 480px) {
+    .product-box { width: 100%; }
+  }
+</style>
+</head>
+<body>
+
+  <h1>Today's Product Offers</h1>
+  <p class="subtitle">44 handpicked deals — grab them before they're gone</p>
+
+  <div class="product-row">
+    <div class="product-box">
+      <img src="https://via.placeholder.com/200x140?text=Whey+Protein" alt="Whey Protein">
+      <h3>Whey Protein</h3>
+      <div class="price">$29.84</div>
+      <div class="old-price">$42.90</div>
+      <a class="btn" href="#" target="_blank">View Offer</a>
+    </div>
+    <div class="product-box">
+      <img src="https://via.placeholder.com/200x140?text=Casein+Protein" alt="Casein Protein">
+      <h3>Casein Protein</h3>
+      <div class="price">$36.74</div>
+      <div class="old-price">$44.42</div>
+      <a class="btn" href="#" target="_blank">View Offer</a>
+    </div>
+    <div class="product-box">
+      <img src="https://via.placeholder.com/200x140?text=Creatine+Monohydrate" alt="Creatine Monohydrate">
+      <h3>Creatine Monohydrate</h3>
+      <div class="price">$16.73</div>
+      <div class="old-price">$24.18</div>
+      <a class="btn" href="#" target="_blank">View Offer</a>
+    </div>
+    <div class="product-box">
+      <img src="https://via.placeholder.com/200x140?text=BCAA+Powder" alt="BCAA Powder">
+      <h3>BCAA Powder</h3>
+      <div class="price">$18.56</div>
+      <div class="old-price">$33.03</div>
+      <a class="btn" href="#" target="_blank">View Offer</a>
+    </div>
+    <div class="product-box">
+      <img src="https://via.placeholder.com/200x140?text=Pre-Workout+Formula" alt="Pre-Workout Formula">
+      <h3>Pre-Workout Formula</h3>
+      <div class="price">$23.43</div>
+      <div class="old-price">$39.59</div>
+      <a class="btn" href="#" target="_blank">View Offer</a>
+    </div>
+    <div class="product-box">
+      <img src="https://via.placeholder.com/200x140?text=Mass+Gainer" alt="Mass Gainer">
+      <h3>Mass Gainer</h3>
+      <div class="price">$36.03</div>
+      <div class="old-price">$52.53</div>
+      <a class="btn" href="#" target="_blank">View Offer</a>
+    </div>
+    <div class="product-box">
+      <img src="https://via.placeholder.com/200x140?text=Multivitamin+Tablets" alt="Multivitamin Tablets">
+      <h3>Multivitamin Tablets</h3>
+      <div class="price">$14.53</div>
+      <div class="old-price">$24.95</div>
+      <a class="btn" href="#" target="_blank">View Offer</a>
+    </div>
+    <div class="product-box">
+      <img src="https://via.placeholder.com/200x140?text=Fish+Oil+Omega-3" alt="Fish Oil Omega-3">
+      <h3>Fish Oil Omega-3</h3>
+      <div class="price">$14.97</div>
+      <div class="old-price">$25.33</div>
+      <a class="btn" href="#" target="_blank">View Offer</a>
+    </div>
+    <div class="product-box">
+      <img src="https://via.placeholder.com/200x140?text=ZMA+Recovery" alt="ZMA Recovery">
+      <h3>ZMA Recovery</h3>
+      <div class="price">$21.00</div>
+      <div class="old-price">$31.68</div>
+      <a class="btn" href="#" target="_blank">View Offer</a>
+    </div>
+    <div class="product-box">
+      <img src="https://via.placeholder.com/200x140?text=Glutamine+Powder" alt="Glutamine Powder">
+      <h3>Glutamine Powder</h3>
+      <div class="price">$22.17</div>
+      <div class="old-price">$30.37</div>
+      <a class="btn" href="#" target="_blank">View Offer</a>
+    </div>
+    <div class="product-box">
+      <img src="https://via.placeholder.com/200x140?text=Resistance+Bands+Set" alt="Resistance Bands Set">
+      <h3>Resistance Bands Set</h3>
+      <div class="price">$17.81</div>
+      <div class="old-price">$20.27</div>
+      <a class="btn" href="#" target="_blank">View Offer</a>
+    </div>
+    <div class="product-box">
+      <img src="https://via.placeholder.com/200x140?text=Adjustable+Dumbbells" alt="Adjustable Dumbbells">
+      <h3>Adjustable Dumbbells</h3>
+      <div class="price">$124.32</div>
+      <div class="old-price">$133.73</div>
+      <a class="btn" href="#" target="_blank">View Offer</a>
+    </div>
+    <div class="product-box">
+      <img src="https://via.placeholder.com/200x140?text=Weight+Lifting+Belt" alt="Weight Lifting Belt">
+      <h3>Weight Lifting Belt</h3>
+      <div class="price">$26.71</div>
+      <div class="old-price">$39.70</div>
+      <a class="btn" href="#" target="_blank">View Offer</a>
+    </div>
+    <div class="product-box">
+      <img src="https://via.placeholder.com/200x140?text=Gym+Gloves" alt="Gym Gloves">
+      <h3>Gym Gloves</h3>
+      <div class="price">$10.52</div>
+      <div class="old-price">$20.89</div>
+      <a class="btn" href="#" target="_blank">View Offer</a>
+    </div>
+    <div class="product-box">
+      <img src="https://via.placeholder.com/200x140?text=Wrist+Wraps" alt="Wrist Wraps">
+      <h3>Wrist Wraps</h3>
+      <div class="price">$8.88</div>
+      <div class="old-price">$18.48</div>
+      <a class="btn" href="#" target="_blank">View Offer</a>
+    </div>
+    <div class="product-box">
+      <img src="https://via.placeholder.com/200x140?text=Knee+Sleeves" alt="Knee Sleeves">
+      <h3>Knee Sleeves</h3>
+      <div class="price">$24.73</div>
+      <div class="old-price">$32.22</div>
+      <a class="btn" href="#" target="_blank">View Offer</a>
+    </div>
+    <div class="product-box">
+      <img src="https://via.placeholder.com/200x140?text=Foam+Roller" alt="Foam Roller">
+      <h3>Foam Roller</h3>
+      <div class="price">$18.81</div>
+      <div class="old-price">$24.37</div>
+      <a class="btn" href="#" target="_blank">View Offer</a>
+    </div>
+    <div class="product-box">
+      <img src="https://via.placeholder.com/200x140?text=Yoga+Mat" alt="Yoga Mat">
+      <h3>Yoga Mat</h3>
+      <div class="price">$17.46</div>
+      <div class="old-price">$28.23</div>
+      <a class="btn" href="#" target="_blank">View Offer</a>
+    </div>
+    <div class="product-box">
+      <img src="https://via.placeholder.com/200x140?text=Shaker+Bottle" alt="Shaker Bottle">
+      <h3>Shaker Bottle</h3>
+      <div class="price">$8.70</div>
+      <div class="old-price">$14.56</div>
+      <a class="btn" href="#" target="_blank">View Offer</a>
+    </div>
+    <div class="product-box">
+      <img src="https://via.placeholder.com/200x140?text=Gym+Duffel+Bag" alt="Gym Duffel Bag">
+      <h3>Gym Duffel Bag</h3>
+      <div class="price">$34.69</div>
+      <div class="old-price">$50.50</div>
+      <a class="btn" href="#" target="_blank">View Offer</a>
+    </div>
+    <div class="product-box">
+      <img src="https://via.placeholder.com/200x140?text=Jump+Rope" alt="Jump Rope">
+      <h3>Jump Rope</h3>
+      <div class="price">$9.25</div>
+      <div class="old-price">$15.79</div>
+      <a class="btn" href="#" target="_blank">View Offer</a>
+    </div>
+    <div class="product-box">
+      <img src="https://via.placeholder.com/200x140?text=Pull-Up+Bar" alt="Pull-Up Bar">
+      <h3>Pull-Up Bar</h3>
+      <div class="price">$30.72</div>
+      <div class="old-price">$39.18</div>
+      <a class="btn" href="#" target="_blank">View Offer</a>
+    </div>
+    <div class="product-box">
+      <img src="https://via.placeholder.com/200x140?text=Ab+Roller+Wheel" alt="Ab Roller Wheel">
+      <h3>Ab Roller Wheel</h3>
+      <div class="price">$13.69</div>
+      <div class="old-price">$24.44</div>
+      <a class="btn" href="#" target="_blank">View Offer</a>
+    </div>
+    <div class="product-box">
+      <img src="https://via.placeholder.com/200x140?text=Kettlebell+16kg" alt="Kettlebell 16kg">
+      <h3>Kettlebell 16kg</h3>
+      <div class="price">$47.86</div>
+      <div class="old-price">$62.24</div>
+      <a class="btn" href="#" target="_blank">View Offer</a>
+    </div>
+    <div class="product-box">
+      <img src="https://via.placeholder.com/200x140?text=Weighted+Vest" alt="Weighted Vest">
+      <h3>Weighted Vest</h3>
+      <div class="price">$59.57</div>
+      <div class="old-price">$68.72</div>
+      <a class="btn" href="#" target="_blank">View Offer</a>
+    </div>
+    <div class="product-box">
+      <img src="https://via.placeholder.com/200x140?text=Compression+Shirt" alt="Compression Shirt">
+      <h3>Compression Shirt</h3>
+      <div class="price">$29.78</div>
+      <div class="old-price">$32.70</div>
+      <a class="btn" href="#" target="_blank">View Offer</a>
+    </div>
+    <div class="product-box">
+      <img src="https://via.placeholder.com/200x140?text=Training+Shorts" alt="Training Shorts">
+      <h3>Training Shorts</h3>
+      <div class="price">$21.74</div>
+      <div class="old-price">$33.53</div>
+      <a class="btn" href="#" target="_blank">View Offer</a>
+    </div>
+    <div class="product-box">
+      <img src="https://via.placeholder.com/200x140?text=Running+Shoes" alt="Running Shoes">
+      <h3>Running Shoes</h3>
+      <div class="price">$53.78</div>
+      <div class="old-price">$79.92</div>
+      <a class="btn" href="#" target="_blank">View Offer</a>
+    </div>
+    <div class="product-box">
+      <img src="https://via.placeholder.com/200x140?text=Lifting+Straps" alt="Lifting Straps">
+      <h3>Lifting Straps</h3>
+      <div class="price">$10.18</div>
+      <div class="old-price">$21.00</div>
+      <a class="btn" href="#" target="_blank">View Offer</a>
+    </div>
+    <div class="product-box">
+      <img src="https://via.placeholder.com/200x140?text=Chalk+Block+Set" alt="Chalk Block Set">
+      <h3>Chalk Block Set</h3>
+      <div class="price">$10.04</div>
+      <div class="old-price">$16.43</div>
+      <a class="btn" href="#" target="_blank">View Offer</a>
+    </div>
+    <div class="product-box">
+      <img src="https://via.placeholder.com/200x140?text=Sports+Sunglasses" alt="Sports Sunglasses">
+      <h3>Sports Sunglasses</h3>
+      <div class="price">$22.98</div>
+      <div class="old-price">$27.87</div>
+      <a class="btn" href="#" target="_blank">View Offer</a>
+    </div>
+    <div class="product-box">
+      <img src="https://via.placeholder.com/200x140?text=Fitness+Tracker+Band" alt="Fitness Tracker Band">
+      <h3>Fitness Tracker Band</h3>
+      <div class="price">$45.41</div>
+      <div class="old-price">$55.56</div>
+      <a class="btn" href="#" target="_blank">View Offer</a>
+    </div>
+    <div class="product-box">
+      <img src="https://via.placeholder.com/200x140?text=Massage+Gun" alt="Massage Gun">
+      <h3>Massage Gun</h3>
+      <div class="price">$77.38</div>
+      <div class="old-price">$94.73</div>
+      <a class="btn" href="#" target="_blank">View Offer</a>
+    </div>
+    <div class="product-box">
+      <img src="https://via.placeholder.com/200x140?text=Sweat+Towel" alt="Sweat Towel">
+      <h3>Sweat Towel</h3>
+      <div class="price">$8.34</div>
+      <div class="old-price">$16.66</div>
+      <a class="btn" href="#" target="_blank">View Offer</a>
+    </div>
+    <div class="product-box">
+      <img src="https://via.placeholder.com/200x140?text=Water+Bottle+1L" alt="Water Bottle 1L">
+      <h3>Water Bottle 1L</h3>
+      <div class="price">$12.35</div>
+      <div class="old-price">$20.97</div>
+      <a class="btn" href="#" target="_blank">View Offer</a>
+    </div>
+    <div class="product-box">
+      <img src="https://via.placeholder.com/200x140?text=Protein+Bar+Box" alt="Protein Bar Box">
+      <h3>Protein Bar Box</h3>
+      <div class="price">$19.53</div>
+      <div class="old-price">$34.20</div>
+      <a class="btn" href="#" target="_blank">View Offer</a>
+    </div>
+    <div class="product-box">
+      <img src="https://via.placeholder.com/200x140?text=Electrolyte+Powder" alt="Electrolyte Powder">
+      <h3>Electrolyte Powder</h3>
+      <div class="price">$17.51</div>
+      <div class="old-price">$27.95</div>
+      <a class="btn" href="#" target="_blank">View Offer</a>
+    </div>
+    <div class="product-box">
+      <img src="https://via.placeholder.com/200x140?text=Hand+Grip+Strengthener" alt="Hand Grip Strengthener">
+      <h3>Hand Grip Strengthener</h3>
+      <div class="price">$12.09</div>
+      <div class="old-price">$16.70</div>
+      <a class="btn" href="#" target="_blank">View Offer</a>
+    </div>
+    <div class="product-box">
+      <img src="https://via.placeholder.com/200x140?text=Ankle+Weights" alt="Ankle Weights">
+      <h3>Ankle Weights</h3>
+      <div class="price">$16.68</div>
+      <div class="old-price">$27.00</div>
+      <a class="btn" href="#" target="_blank">View Offer</a>
+    </div>
+    <div class="product-box">
+      <img src="https://via.placeholder.com/200x140?text=Gym+Towel+Set" alt="Gym Towel Set">
+      <h3>Gym Towel Set</h3>
+      <div class="price">$9.09</div>
+      <div class="old-price">$18.76</div>
+      <a class="btn" href="#" target="_blank">View Offer</a>
+    </div>
+    <div class="product-box">
+      <img src="https://via.placeholder.com/200x140?text=Muscle+Recovery+Balm" alt="Muscle Recovery Balm">
+      <h3>Muscle Recovery Balm</h3>
+      <div class="price">$11.99</div>
+      <div class="old-price">$19.69</div>
+      <a class="btn" href="#" target="_blank">View Offer</a>
+    </div>
+    <div class="product-box">
+      <img src="https://via.placeholder.com/200x140?text=Sleep+Support+Capsules" alt="Sleep Support Capsules">
+      <h3>Sleep Support Capsules</h3>
+      <div class="price">$15.45</div>
+      <div class="old-price">$29.60</div>
+      <a class="btn" href="#" target="_blank">View Offer</a>
+    </div>
+    <div class="product-box">
+      <img src="https://via.placeholder.com/200x140?text=Testosterone+Support" alt="Testosterone Support">
+      <h3>Testosterone Support</h3>
+      <div class="price">$26.66</div>
+      <div class="old-price">$41.48</div>
+      <a class="btn" href="#" target="_blank">View Offer</a>
+    </div>
+    <div class="product-box">
+      <img src="https://via.placeholder.com/200x140?text=Collagen+Peptides" alt="Collagen Peptides">
+      <h3>Collagen Peptides</h3>
+      <div class="price">$26.28</div>
+      <div class="old-price">$40.22</div>
+      <a class="btn" href="#" target="_blank">View Offer</a>
+    </div>
+  </div>
+
+</body>
+</html>
